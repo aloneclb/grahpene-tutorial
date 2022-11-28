@@ -37,7 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "graphene_django"
+    "graphene_django",
+
+    # My App
+    "ingredients",
+
 
 ]
 
@@ -128,5 +132,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # GraphQL
 GRAPHENE = {
-    "SCHEMA": "core.schema.schema"
+    "SCHEMA": "ingredients.schema.schema"
 }
